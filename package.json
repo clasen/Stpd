@@ -1,0 +1,39 @@
+{
+  "name": "stpd",
+  "description": "😈 Stpd - and Powerful Cache.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "exports": {
+    ".": {
+      "require": "./index.cjs",
+      "import": "./index.js"
+    }
+  },   
+  "author": "Martin Clasen",
+  "license": "MIT",
+  "keywords": [
+    "cache",
+    "easy",
+    "stupid",
+    "caching",
+    "infrastructure",
+    "redis",
+    "scale",
+    "local",
+    "standalone",
+    "clasen"
+  ],
+  "dependencies": {
+    "farmhash": "^4.0.1",
+    "redis": "^4.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clasen/Stpd.git"
+  },
+  "bugs": {
+    "url": "https://github.com/clasen/Stpd/issues"
+  },
+  "homepage": "https://github.com/clasen/Stpd#readme"
+}
