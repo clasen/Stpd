@@ -35,7 +35,7 @@ const result = await stpd.cache(['user','123'], async () => {
 });
 
 // Clear a specific item from cache
-await cache.clear('user:123');
+await cache.clear(['user','123']);
 
 // Get cache statistics
 const stats = stpd.getStats();
