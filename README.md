@@ -29,13 +29,14 @@ const stpd = new Stpd({
 });
 
 // Cache a value with automatic generation / key = ['user','123']
-const result = await stpd.cache(['user','123'], async () => {
+const result = await stpd.cache(['user', '123'], async () => {
     // This function only runs if the value isn't in cache
-    return await fetchUserFromDatabase('123');
+    const user = await fetchUserFromDatabase('123');
+    return user;
 });
 
 // Clear a specific item from cache
-await cache.clear(['user','123']);
+await cache.clear(['user', '123']);
 
 // Get cache statistics
 const stats = stpd.getStats();
