@@ -1,7 +1,7 @@
 {
   "name": "stpd",
   "description": "😈 Stpd - and Powerful Cache.",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "main": "index.js",
   "type": "module",
   "exports": {
